@@ -5,6 +5,6 @@ function testFunc() {
 }
 
 function superbowlWin(array){
-  return array.find(element => element.result === "W").year;
+  return (typeof (let result = array.find(element => element.result === "W")) === 'undefined') ? undefined : result.year;
   //return ((typeof result === 'undefined') ? undefined : result.year)
 }
